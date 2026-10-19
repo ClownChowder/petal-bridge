@@ -1,2 +1,17 @@
-# petal-bridge
-Petal Bridge — personal Android releases and corresponding source.
+# Petal Bridge
+
+Personal offline translation preview with optional desktop companion support. Translation accuracy and latency limitations remain. Model/runtime licenses and attribution are included. Do not rely on translations for high-stakes decisions.
+
+Download the APK and full corresponding source ZIP from [Releases](https://github.com/ClownChowder/petal-bridge/releases). Upstream copyright notices, model/audio credits and licenses are retained in the source and app assets. This repository indexes personal preview releases; the automatic GitHub source archives are not the app source. Use the explicitly attached `petal-bridge-source.zip`.
+
+## Obtainium
+
+Source: `https://github.com/ClownChowder/petal-bridge`
+
+APK filename filter: `^petal-bridge\.apk$`
+
+Android package: `com.petalbridge`
+
+Signing certificate SHA-256: `386f097ea7de3749f0b0cc87e433d0f8a8a70cebb1848d7e7cb4bd5f60cff2b4`
+
+The published initial APK matches the installed version 0.6.2-themes-preview (code 11). Existing qualification limits remain. Future builds require the same signing key and an increased version code/name, plus updated corresponding source and checksums. Obtainium detects published releases; it does not develop or build new versions. Signing keys, pairing tokens and personal app data are not published.
