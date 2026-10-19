@@ -1,0 +1,45 @@
+Petal Bridge includes Vosk Android 0.3.75 and the Vosk small US English model 0.15.
+Vosk API: Copyright Alpha Cephei Inc.; licensed under Apache License 2.0.
+Source: https://github.com/alphacep/vosk-api
+Speech model: https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
+The model is listed under the Apache License 2.0 at https://alphacephei.com/vosk/models.
+
+JNA 5.18.1 is used under its Apache License 2.0 option.
+Source: https://github.com/java-native-access/jna
+
+LiteRT-LM 0.18.0: Copyright Google LLC; Apache License 2.0.
+Source and third-party notices: https://github.com/google-ai-edge/LiteRT-LM
+Runtime dependency notices are also retained in the library artifacts.
+The Apache License 2.0 is included in APACHE-2.0.txt.
+
+English → Chinese and English → Thai Argos model packages version 1.9:
+Derived from OPUS-MT; authors Jörg Tiedemann and Santhosh Thottingal.
+"OPUS-MT — Building open translation services for the World", EAMT 2020, Lisbon.
+Model weights are licensed CC-BY 4.0. Package metadata and READMEs are bundled
+with each model. Sources: https://github.com/argosopentech/argospm-index
+https://argos-net.com/v1/translate-en_zh-1_9.argosmodel
+https://argos-net.com/v1/translate-en_th-1_9.argosmodel
+Petal Bridge omits the Python/Stanza runtime, uses Android sentence boundaries,
+and performs inference with CTranslate2 and SentencePiece.
+
+CTranslate2 4.6.0 (OpenNMT), MIT; Ruy (Google), Apache 2.0;
+SentencePiece 0.2.0 (Google), Apache 2.0; spdlog (Gabi Melman), MIT;
+cpuinfo and protobuf-lite, BSD; Abseil, Apache 2.0.
+Full third-party license texts are included beside this notice.
+
+Additional native components: Darts-clone and esaxx (BSD),
+NEON math functions by Julien Pommier (zlib),
+BS thread pool by Barak Shoshany (MIT, https://github.com/bshoshany/thread-pool),
+and LLVM libc++ (Apache 2.0 with LLVM exception).
+Corresponding license texts are bundled in this directory.
+
+
+Multilingual speech preview: Whisper Small, OpenAI (MIT), quantized locally to Q5_1 with whisper.cpp v1.7.6, Georgi Gerganov and contributors (MIT).
+https://github.com/openai/whisper
+https://github.com/ggml-org/whisper.cpp/tree/v1.7.6
+Weights: https://huggingface.co/ggerganov/whisper.cpp/blob/main/ggml-small.bin
+
+Petal Bridge modification to whisper.cpp: expose abort callback during language detection so Cancel also stops detection inference. Reproducible patch is scripts/whisper-cancellable-detection.patch in the source project.
+
+
+Offline candidate: Qwen3-ASR-0.6B (Alibaba/Qwen, Apache-2.0), converted GGUF from ggml-org. TranslateGemma 4B (Google), subject to Gemma terms: https://ai.google.dev/gemma/terms and prohibited-use policy: https://ai.google.dev/gemma/prohibited_use_policy . Models are imported separately and verified; this APK does not include the Gemma weights. llama.cpp runtime is MIT.
